@@ -1,0 +1,8 @@
+node_modules
+.next
+.next-prod
+portable-release
+deploy-publish
+dist
+out
+*.log
