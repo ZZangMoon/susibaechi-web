@@ -1,0 +1,294 @@
+﻿{
+    "M":  {
+              "normalized":  "IF(\u003cCELL\u003e=\"\",\"\",IF(\u003cCELL\u003e=\"인문\",성적입력!\u003cCELL\u003e,성적입력!\u003cCELL\u003e))",
+              "count":  5630,
+              "samples":  [
+                              {
+                                  "ref":  "M5",
+                                  "formula":  "IF(I5=\"\",\"\",IF(I5=\"인문\",성적입력!$C$8,성적입력!$C$9))"
+                              },
+                              {
+                                  "ref":  "M6",
+                                  "formula":  "IF(I6=\"\",\"\",IF(I6=\"인문\",성적입력!$C$8,성적입력!$C$9))"
+                              },
+                              {
+                                  "ref":  "M7",
+                                  "formula":  "IF(I7=\"\",\"\",IF(I7=\"인문\",성적입력!$C$8,성적입력!$C$9))"
+                              },
+                              {
+                                  "ref":  "M8",
+                                  "formula":  "IF(I8=\"\",\"\",IF(I8=\"인문\",성적입력!$C$8,성적입력!$C$9))"
+                              },
+                              {
+                                  "ref":  "M9",
+                                  "formula":  "IF(I9=\"\",\"\",IF(I9=\"인문\",성적입력!$C$8,성적입력!$C$9))"
+                              }
+                          ]
+          },
+    "N":  {
+              "normalized":  "성적입력!\u003cCELL\u003e",
+              "count":  5630,
+              "samples":  [
+                              {
+                                  "ref":  "N5",
+                                  "formula":  "성적입력!$C$15"
+                              },
+                              {
+                                  "ref":  "N6",
+                                  "formula":  "성적입력!$C$15"
+                              },
+                              {
+                                  "ref":  "N7",
+                                  "formula":  "성적입력!$C$15"
+                              },
+                              {
+                                  "ref":  "N8",
+                                  "formula":  "성적입력!$C$15"
+                              },
+                              {
+                                  "ref":  "N9",
+                                  "formula":  "성적입력!$C$15"
+                              }
+                          ]
+          },
+    "P":  [
+              {
+                  "normalized":  "",
+                  "count":  5786,
+                  "samples":  [
+                                  {
+                                      "ref":  "P6",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "P7",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "P8",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "P9",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "P10",
+                                      "formula":  ""
+                                  }
+                              ]
+              },
+              {
+                  "normalized":  "IF(OR(\u003cCELL\u003e=\"\",\u003cCELL\u003e=\"\",\u003cCELL\u003e=\"\"),\"\",IF(\u003cCELL\u003e\u003c=\u003cCELL\u003e,\"안정\",IF(\u003cCELL\u003e\u003c=\u003cCELL\u003e,\"적정\",IF(\u003cCELL\u003e\u003c=\u003cCELL\u003e,\"소신\",\"상향\"))))",
+                  "count":  92,
+                  "samples":  [
+                                  {
+                                      "ref":  "P5",
+                                      "formula":  "IF(OR(J5=\"\",N5=\"\",M5=\"\"),\"\",IF(N5\u003c=T5,\"안정\",IF(N5\u003c=S5,\"적정\",IF(N5\u003c=R5,\"소신\",\"상향\"))))"
+                                  },
+                                  {
+                                      "ref":  "P69",
+                                      "formula":  "IF(OR(J69=\"\",N69=\"\",M69=\"\"),\"\",IF(N69\u003c=T69,\"안정\",IF(N69\u003c=S69,\"적정\",IF(N69\u003c=R69,\"소신\",\"상향\"))))"
+                                  },
+                                  {
+                                      "ref":  "P133",
+                                      "formula":  "IF(OR(J133=\"\",N133=\"\",M133=\"\"),\"\",IF(N133\u003c=T133,\"안정\",IF(N133\u003c=S133,\"적정\",IF(N133\u003c=R133,\"소신\",\"상향\"))))"
+                                  },
+                                  {
+                                      "ref":  "P197",
+                                      "formula":  "IF(OR(J197=\"\",N197=\"\",M197=\"\"),\"\",IF(N197\u003c=T197,\"안정\",IF(N197\u003c=S197,\"적정\",IF(N197\u003c=R197,\"소신\",\"상향\"))))"
+                                  },
+                                  {
+                                      "ref":  "P261",
+                                      "formula":  "IF(OR(J261=\"\",N261=\"\",M261=\"\"),\"\",IF(N261\u003c=T261,\"안정\",IF(N261\u003c=S261,\"적정\",IF(N261\u003c=R261,\"소신\",\"상향\"))))"
+                                  }
+                              ]
+              }
+          ],
+    "R":  {
+              "normalized":  "IFERROR(IF(OR(\u003cCELL\u003e=\"\",\u003cCELL\u003e=\"\",\u003cCELL\u003e=\"\"),\"\",IF(\u003cCELL\u003e=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(\u003cCELL\u003e,종합배치표!$B:$B,\u003cN\u003e),(MATCH(\u003cCELL\u003e,{\"A\",\"B\",\"C\",\"D\",\"E\"},\u003cN\u003e)-\u003cN\u003e)*\u003cN\u003e+\u003cN\u003e),INDEX(교과배치표!$C:$Q,MATCH(\u003cCELL\u003e,교과배치표!$B:$B,\u003cN\u003e),(MATCH(\u003cCELL\u003e,{\"A\",\"B\",\"C\",\"D\",\"E\"},\u003cN\u003e)-\u003cN\u003e)*\u003cN\u003e+\u003cN\u003e))),\"\")",
+              "count":  6514,
+              "samples":  [
+                              {
+                                  "ref":  "R5",
+                                  "formula":  "IFERROR(IF(OR(J5=\"\",M5=\"\",F5=\"\"),\"\",IF(F5=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J5,종합배치표!$B:$B,0),(MATCH(M5,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+1),INDEX(교과배치표!$C:$Q,MATCH(J5,교과배치표!$B:$B,0),(MATCH(M5,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+1))),\"\")"
+                              },
+                              {
+                                  "ref":  "R6",
+                                  "formula":  "IFERROR(IF(OR(J6=\"\",M6=\"\",F6=\"\"),\"\",IF(F6=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J6,종합배치표!$B:$B,0),(MATCH(M6,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+1),INDEX(교과배치표!$C:$Q,MATCH(J6,교과배치표!$B:$B,0),(MATCH(M6,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+1))),\"\")"
+                              },
+                              {
+                                  "ref":  "R7",
+                                  "formula":  "IFERROR(IF(OR(J7=\"\",M7=\"\",F7=\"\"),\"\",IF(F7=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J7,종합배치표!$B:$B,0),(MATCH(M7,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+1),INDEX(교과배치표!$C:$Q,MATCH(J7,교과배치표!$B:$B,0),(MATCH(M7,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+1))),\"\")"
+                              },
+                              {
+                                  "ref":  "R8",
+                                  "formula":  "IFERROR(IF(OR(J8=\"\",M8=\"\",F8=\"\"),\"\",IF(F8=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J8,종합배치표!$B:$B,0),(MATCH(M8,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+1),INDEX(교과배치표!$C:$Q,MATCH(J8,교과배치표!$B:$B,0),(MATCH(M8,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+1))),\"\")"
+                              },
+                              {
+                                  "ref":  "R9",
+                                  "formula":  "IFERROR(IF(OR(J9=\"\",M9=\"\",F9=\"\"),\"\",IF(F9=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J9,종합배치표!$B:$B,0),(MATCH(M9,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+1),INDEX(교과배치표!$C:$Q,MATCH(J9,교과배치표!$B:$B,0),(MATCH(M9,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+1))),\"\")"
+                              }
+                          ]
+          },
+    "S":  {
+              "normalized":  "IFERROR(IF(OR(\u003cCELL\u003e=\"\",\u003cCELL\u003e=\"\",\u003cCELL\u003e=\"\"),\"\",IF(\u003cCELL\u003e=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(\u003cCELL\u003e,종합배치표!$B:$B,\u003cN\u003e),(MATCH(\u003cCELL\u003e,{\"A\",\"B\",\"C\",\"D\",\"E\"},\u003cN\u003e)-\u003cN\u003e)*\u003cN\u003e+\u003cN\u003e),INDEX(교과배치표!$C:$Q,MATCH(\u003cCELL\u003e,교과배치표!$B:$B,\u003cN\u003e),(MATCH(\u003cCELL\u003e,{\"A\",\"B\",\"C\",\"D\",\"E\"},\u003cN\u003e)-\u003cN\u003e)*\u003cN\u003e+\u003cN\u003e))),\"\")",
+              "count":  6514,
+              "samples":  [
+                              {
+                                  "ref":  "S5",
+                                  "formula":  "IFERROR(IF(OR(J5=\"\",M5=\"\",F5=\"\"),\"\",IF(F5=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J5,종합배치표!$B:$B,0),(MATCH(M5,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+2),INDEX(교과배치표!$C:$Q,MATCH(J5,교과배치표!$B:$B,0),(MATCH(M5,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+2))),\"\")"
+                              },
+                              {
+                                  "ref":  "S6",
+                                  "formula":  "IFERROR(IF(OR(J6=\"\",M6=\"\",F6=\"\"),\"\",IF(F6=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J6,종합배치표!$B:$B,0),(MATCH(M6,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+2),INDEX(교과배치표!$C:$Q,MATCH(J6,교과배치표!$B:$B,0),(MATCH(M6,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+2))),\"\")"
+                              },
+                              {
+                                  "ref":  "S7",
+                                  "formula":  "IFERROR(IF(OR(J7=\"\",M7=\"\",F7=\"\"),\"\",IF(F7=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J7,종합배치표!$B:$B,0),(MATCH(M7,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+2),INDEX(교과배치표!$C:$Q,MATCH(J7,교과배치표!$B:$B,0),(MATCH(M7,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+2))),\"\")"
+                              },
+                              {
+                                  "ref":  "S8",
+                                  "formula":  "IFERROR(IF(OR(J8=\"\",M8=\"\",F8=\"\"),\"\",IF(F8=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J8,종합배치표!$B:$B,0),(MATCH(M8,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+2),INDEX(교과배치표!$C:$Q,MATCH(J8,교과배치표!$B:$B,0),(MATCH(M8,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+2))),\"\")"
+                              },
+                              {
+                                  "ref":  "S9",
+                                  "formula":  "IFERROR(IF(OR(J9=\"\",M9=\"\",F9=\"\"),\"\",IF(F9=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J9,종합배치표!$B:$B,0),(MATCH(M9,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+2),INDEX(교과배치표!$C:$Q,MATCH(J9,교과배치표!$B:$B,0),(MATCH(M9,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+2))),\"\")"
+                              }
+                          ]
+          },
+    "T":  {
+              "normalized":  "IFERROR(IF(OR(\u003cCELL\u003e=\"\",\u003cCELL\u003e=\"\",\u003cCELL\u003e=\"\"),\"\",IF(\u003cCELL\u003e=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(\u003cCELL\u003e,종합배치표!$B:$B,\u003cN\u003e),(MATCH(\u003cCELL\u003e,{\"A\",\"B\",\"C\",\"D\",\"E\"},\u003cN\u003e)-\u003cN\u003e)*\u003cN\u003e+\u003cN\u003e),INDEX(교과배치표!$C:$Q,MATCH(\u003cCELL\u003e,교과배치표!$B:$B,\u003cN\u003e),(MATCH(\u003cCELL\u003e,{\"A\",\"B\",\"C\",\"D\",\"E\"},\u003cN\u003e)-\u003cN\u003e)*\u003cN\u003e+\u003cN\u003e))),\"\")",
+              "count":  6514,
+              "samples":  [
+                              {
+                                  "ref":  "T5",
+                                  "formula":  "IFERROR(IF(OR(J5=\"\",M5=\"\",F5=\"\"),\"\",IF(F5=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J5,종합배치표!$B:$B,0),(MATCH(M5,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+3),INDEX(교과배치표!$C:$Q,MATCH(J5,교과배치표!$B:$B,0),(MATCH(M5,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+3))),\"\")"
+                              },
+                              {
+                                  "ref":  "T6",
+                                  "formula":  "IFERROR(IF(OR(J6=\"\",M6=\"\",F6=\"\"),\"\",IF(F6=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J6,종합배치표!$B:$B,0),(MATCH(M6,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+3),INDEX(교과배치표!$C:$Q,MATCH(J6,교과배치표!$B:$B,0),(MATCH(M6,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+3))),\"\")"
+                              },
+                              {
+                                  "ref":  "T7",
+                                  "formula":  "IFERROR(IF(OR(J7=\"\",M7=\"\",F7=\"\"),\"\",IF(F7=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J7,종합배치표!$B:$B,0),(MATCH(M7,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+3),INDEX(교과배치표!$C:$Q,MATCH(J7,교과배치표!$B:$B,0),(MATCH(M7,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+3))),\"\")"
+                              },
+                              {
+                                  "ref":  "T8",
+                                  "formula":  "IFERROR(IF(OR(J8=\"\",M8=\"\",F8=\"\"),\"\",IF(F8=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J8,종합배치표!$B:$B,0),(MATCH(M8,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+3),INDEX(교과배치표!$C:$Q,MATCH(J8,교과배치표!$B:$B,0),(MATCH(M8,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+3))),\"\")"
+                              },
+                              {
+                                  "ref":  "T9",
+                                  "formula":  "IFERROR(IF(OR(J9=\"\",M9=\"\",F9=\"\"),\"\",IF(F9=\"학생부종합\",INDEX(종합배치표!$C:$Q,MATCH(J9,종합배치표!$B:$B,0),(MATCH(M9,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+3),INDEX(교과배치표!$C:$Q,MATCH(J9,교과배치표!$B:$B,0),(MATCH(M9,{\"A\",\"B\",\"C\",\"D\",\"E\"},0)-1)*3+3))),\"\")"
+                              }
+                          ]
+          },
+    "V":  [
+              {
+                  "normalized":  "\u003cCELL\u003e",
+                  "count":  47,
+                  "samples":  [
+                                  {
+                                      "ref":  "V5",
+                                      "formula":  "$W$2"
+                                  },
+                                  {
+                                      "ref":  "V69",
+                                      "formula":  "$W$2"
+                                  },
+                                  {
+                                      "ref":  "V133",
+                                      "formula":  "$W$2"
+                                  },
+                                  {
+                                      "ref":  "V197",
+                                      "formula":  "$W$2"
+                                  },
+                                  {
+                                      "ref":  "V261",
+                                      "formula":  "$W$2"
+                                  }
+                              ]
+              },
+              {
+                  "normalized":  "",
+                  "count":  2948,
+                  "samples":  [
+                                  {
+                                      "ref":  "V6",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "V7",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "V8",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "V9",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "V10",
+                                      "formula":  ""
+                                  }
+                              ]
+              }
+          ],
+    "W":  [
+              {
+                  "normalized":  "",
+                  "count":  2948,
+                  "samples":  [
+                                  {
+                                      "ref":  "W6",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "W7",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "W8",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "W9",
+                                      "formula":  ""
+                                  },
+                                  {
+                                      "ref":  "W10",
+                                      "formula":  ""
+                                  }
+                              ]
+              },
+              {
+                  "normalized":  "IF(OR(\u003cCELL\u003e=\"\",\u003cCELL\u003e=\"\",\u003cCELL\u003e=\"\"),\"\",IF(\u003cCELL\u003e\u003c=\u003cCELL\u003e,\"안정\",IF(\u003cCELL\u003e\u003c=\u003cCELL\u003e,\"적정\",IF(\u003cCELL\u003e\u003c=\u003cCELL\u003e,\"소신\",\"상향\"))))",
+                  "count":  47,
+                  "samples":  [
+                                  {
+                                      "ref":  "W5",
+                                      "formula":  "IF(OR(J5=\"\",V5=\"\",M5=\"\"),\"\",IF(V5\u003c=T5,\"안정\",IF(V5\u003c=S5,\"적정\",IF(V5\u003c=R5,\"소신\",\"상향\"))))"
+                                  },
+                                  {
+                                      "ref":  "W69",
+                                      "formula":  "IF(OR(J69=\"\",V69=\"\",M69=\"\"),\"\",IF(V69\u003c=T69,\"안정\",IF(V69\u003c=S69,\"적정\",IF(V69\u003c=R69,\"소신\",\"상향\"))))"
+                                  },
+                                  {
+                                      "ref":  "W133",
+                                      "formula":  "IF(OR(J133=\"\",V133=\"\",M133=\"\"),\"\",IF(V133\u003c=T133,\"안정\",IF(V133\u003c=S133,\"적정\",IF(V133\u003c=R133,\"소신\",\"상향\"))))"
+                                  },
+                                  {
+                                      "ref":  "W197",
+                                      "formula":  "IF(OR(J197=\"\",V197=\"\",M197=\"\"),\"\",IF(V197\u003c=T197,\"안정\",IF(V197\u003c=S197,\"적정\",IF(V197\u003c=R197,\"소신\",\"상향\"))))"
+                                  },
+                                  {
+                                      "ref":  "W261",
+                                      "formula":  "IF(OR(J261=\"\",V261=\"\",M261=\"\"),\"\",IF(V261\u003c=T261,\"안정\",IF(V261\u003c=S261,\"적정\",IF(V261\u003c=R261,\"소신\",\"상향\"))))"
+                                  }
+                              ]
+              }
+          ]
+}
